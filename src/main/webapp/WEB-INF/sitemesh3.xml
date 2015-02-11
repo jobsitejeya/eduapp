@@ -1,0 +1,6 @@
+<sitemesh>
+    <mapping path="/login/*" decorator="/WEB-INF/templates/login.jsp"/>
+ <mapping path="/*" decorator="/WEB-INF/templates/default.jsp"/>
+ 
+ <!-- <mapping path="/user" decorator="/WEB-INF/templates/userDecorator.jsp"/> -->
+</sitemesh>
