@@ -33,7 +33,7 @@
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>eduapp</servlet-name>
-		<url-pattern>/</url-pattern>
+		<url-pattern>*.htm</url-pattern>
 	</servlet-mapping>
 
 	<filter>
@@ -42,7 +42,7 @@
 	</filter>
 	<filter-mapping>
 		<filter-name>sitemesh</filter-name>
-		<url-pattern>/*</url-pattern>
+		<url-pattern>*.htm</url-pattern>
 	</filter-mapping>
 
 	<welcome-file-list>

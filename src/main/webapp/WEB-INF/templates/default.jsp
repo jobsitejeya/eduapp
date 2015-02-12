@@ -9,6 +9,9 @@
     <link
             href="${pageContext.request.contextPath}/resources/css/bootstrap-theme.min.css"
             rel="stylesheet">
+    <link
+            href="${pageContext.request.contextPath}/resources/css/bootstrap-submenu.min.css"
+            rel="stylesheet">
 
     <link rel="stylesheet" type="text/css"
           href="${pageContext.request.contextPath}/resources/jqwidgets/styles/jqx.base.css"/>
@@ -26,6 +29,8 @@
     <script type="text/javascript"
             src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
     <script type="text/javascript"
+            src="${pageContext.request.contextPath}/resources/js/bootstrap-submenu.min.js"></script>
+    <script type="text/javascript"
             src="${pageContext.request.contextPath}/resources/js/angular.min.js"></script>
     <script type="text/javascript"
             src="${pageContext.request.contextPath}/resources/js/angular-route.min.js"></script>
@@ -38,9 +43,13 @@
 
 </head>
 
-<body class="skin-blue">
-
+<body>
+<jsp:include page="_menu.jsp"/>
 
 <sitemesh:write property='body'/>
+
+<script>
+    $('.institute-menu>a').submenupicker();
+</script>
 </body>
 </html>
