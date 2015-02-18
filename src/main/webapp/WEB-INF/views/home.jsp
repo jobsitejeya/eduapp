@@ -8,5 +8,6 @@
 </head>
 <body role="document">
 
+<script src="resources/app/app.js"></script>
 </body>
 </html>

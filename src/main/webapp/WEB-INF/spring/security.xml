@@ -13,10 +13,10 @@
 
 		<security:intercept-url pattern="/**" access="ROLE_USER" />
 
-		<security:form-login login-page="/login/form"
+		<security:form-login login-page="/login/form.htm"
 			login-processing-url="/security" username-parameter="username"
-			password-parameter="password" authentication-failure-url="/login/error" default-target-url="/home"/>
-		<security:logout logout-url="/logout" logout-success-url="/login/form?logout" />
+			password-parameter="password" authentication-failure-url="/login/error.htm" default-target-url="/home.htm"/>
+		<security:logout logout-url="/logout.htm" logout-success-url="/login/form.htm?logout" />
 	</security:http>
 	<security:authentication-manager>
 		<security:authentication-provider>
